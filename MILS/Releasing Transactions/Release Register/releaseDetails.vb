@@ -384,6 +384,7 @@ Public Class releaseDetails
 
             Print2.ShowDialog()
 
+
         Else
 
             Dim rels As String = cbxReceiver.Text

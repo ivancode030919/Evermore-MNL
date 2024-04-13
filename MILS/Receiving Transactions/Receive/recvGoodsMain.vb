@@ -110,7 +110,7 @@
         tbxRefDocNum.Text = ""
         cbxOwnership.SelectedIndex = 0
         dgvRecv.Rows.Clear()
-
+        TextBox1.Text = ""
     End Sub
 
     Sub newDGVFormat()
@@ -431,7 +431,7 @@
             tbxDocNum.Enabled = True
             tbxDocNum.Text = String.Empty
         End If
-        q.fetchIdDocType(tbxDocType.Text)
+
     End Sub
     Private Sub RecvGoodsMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         If e.KeyCode = Keys.Escape Then

@@ -17,7 +17,7 @@ Public Class qry
     Private f As New functions
 
     'Public path As String = "\\172.16.7.7\MILS_v3\EVERMORE\Live\Evermore\MILS\"
-    Public path As String = "C:\Mils_evermore\Evermore\Evermore-MNL\MILS\"
+    Public path As String = "C:\Mils_evermore\Evermore\Evermore-DVO\MILS\"
     Public Sub reportlog()
         Dim RPuser1 As String = "HSDP_DEPOT"
         Dim RPpass2 As String = "123456$hsdp"
@@ -319,20 +319,24 @@ Public Class qry
         With recvGoodsMain
             If SQL.RecordCountDT <> 0 Then
                 For Each r As DataRow In SQL.DBDT.Rows
+                    .docTypeId = ""
                     .docTypeId = r(0)
                 Next
 
 
             Else
-
+                .docTypeId = ""
+                .tbxDocType.Text = ""
             End If
         End With
         With recvListingDetails
             If SQL.RecordCountDT <> 0 Then
                 For Each r As DataRow In SQL.DBDT.Rows
+                    .docTypeId = ""
                     .docTypeId = r(0)
                 Next
-
+                .docTypeId = ""
+                .tbxDocType.Text = ""
             End If
         End With
     End Sub
@@ -2022,7 +2026,7 @@ Public Class qry
                 Next
             Else
                 .docTypeId = ""
-
+                .tbxDocType.Text = ""
             End If
         End With
     End Sub
