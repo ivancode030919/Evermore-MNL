@@ -7,6 +7,7 @@ Public Class sqlcon
 
     'DVO DBC
     Public DBCon As New SqlConnection("Data Source=DESKTOP-AT16NDK;Initial Catalog=EvermoreDB_DVO;Persist Security Info=True;User ID=HSDP_DEPOT;Password=123456$hsdp")
+
     Public DBCmd As SqlCommand
     Public DBDA As SqlDataAdapter
     Public DBDT As DataTable

@@ -8014,8 +8014,10 @@ FROM tblProductsABHeaders T1
         End If
 
         ' Execute the SQL query to retrieve the top series from tblrecvseries
-        SQL.ExecQueryDT("Select TOP 1 series from tblRecvHeaders where  docType = 50014 order by id desc")
-
+        'query for Other branch
+        'SQL.ExecQueryDT("Select TOP 1 series from tblRecvHeaders where  docType = 50014 order by id desc")
+        'query for Davao branch
+        SQL.ExecQueryDT("Select TOP 1 series from tblRecvHeaders where  docType = 50016 order by id desc")
         ' Check for any exceptions during the SQL query execution
         If SQL.HasException(True) Then Exit Sub
 
