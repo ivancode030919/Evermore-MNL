@@ -18,9 +18,9 @@ Public Class qry
 
     'Public path As String = "\\172.16.7.7\MILS_v3\EVERMORE\Live\Evermore\MILS\"
     'DAVAO PATH
-    'Public path As String = "C:\Mils_evermore\Evermore\Evermore-DVO\MILS\"
+    Public path As String = "C:\Mils_evermore\Evermore\Evermore-DVO\MILS\"
     'MANILA PATH
-    Public path As String = "C:\Mils_evermore\Evermore\Evermore-MNL\MILS\"
+    'Public path As String = "C:\Mils_evermore\Evermore\Evermore-MNL\MILS\"
 
     Public Sub reportlog()
         Dim RPuser1 As String = "HSDP_DEPOT"
