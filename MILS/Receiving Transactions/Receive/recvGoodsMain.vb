@@ -96,6 +96,7 @@
             tbxDocType.Text = ""
         End If
         senderId = q.fetchSenderId(cbxSender.Text)
+
     End Sub
 
     Sub clearfields()
@@ -431,7 +432,7 @@
             tbxDocNum.Enabled = True
             tbxDocNum.Text = String.Empty
         End If
-
+        q.fetchIdDocType(tbxDocType.Text)
     End Sub
     Private Sub RecvGoodsMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         If e.KeyCode = Keys.Escape Then

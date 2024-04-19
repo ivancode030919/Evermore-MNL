@@ -438,7 +438,7 @@
             tbxDocNum.Enabled = True
             tbxDocNum.Text = ""
         End If
-
+        q.fetchIdDocTypeRels(tbxDocType.Text)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
